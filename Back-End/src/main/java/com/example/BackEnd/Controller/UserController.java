@@ -38,7 +38,7 @@ public class UserController {
                 return new ResponseEntity<>(responseDTO, HttpStatus.ACCEPTED);
             } else if ("06".equals(res)) {
                 responseDTO.setCode(VarList.RSP_DUPLICATED);
-                responseDTO.setMessage("Password is already entered");
+                responseDTO.setMessage("Email is already entered");
                 responseDTO.setContent(userDTO);
                 return new ResponseEntity<>(responseDTO, HttpStatus.BAD_REQUEST);
             } else {
